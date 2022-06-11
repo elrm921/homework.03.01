@@ -30,21 +30,17 @@ class Calculator {
         }
         bool set_num1(double num1) {
             this->num1 = num1;
-            if (this->num1 == num1) {
-                return true;
-            }
-            else {
-                return false;
-            }
+            return true;
         }
         bool set_num2(double num2) {
             this->num2 = num2;
-            if (this->num2 == num2) {
-                return true;
-            }
-            else {
-                return false;
-            }
+            return true;
+        }
+        bool set_num1() {
+            return false;
+        } 
+        bool set_num2() {
+            return false;
         }
     private:
         double num1;
