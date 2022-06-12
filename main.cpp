@@ -29,18 +29,22 @@ class Calculator {
             return num2 / num1;
         }
         bool set_num1(double num1) {
-            this->num1 = num1;
-            return true;
+            if (num1 != 0) {
+                this->num1 = num1;
+                return true;
+            }
+            else {
+                return false;
+            }
         }
         bool set_num2(double num2) {
-            this->num2 = num2;
-            return true;
-        }
-        bool set_num1() {
-            return false;
-        } 
-        bool set_num2() {
-            return false;
+            if (num2 != 0) {
+                this->num2 = num2;
+                return true;
+            }
+            else {
+                return false;
+            }
         }
     private:
         double num1;
